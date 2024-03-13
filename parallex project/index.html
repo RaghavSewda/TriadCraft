@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .wrapper {
+        overflow-x: hidden;
+        height: 100vh;
+        overflow-y: auto;
+        perspective: 10px;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+      }
+      .background,
+      .foreground {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .background {
+        transform: translateZ(-40px) scale(5);
+      }
+      .foreground {
+        transform: translateZ(-20px) scale(3);
+      }
+      h1 {
+        position: absolute;
+        top: 5rem;
+        font-size: 10rem;
+        letter-spacing: 4px;
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      section {
+        background-color: rgb(45, 45, 45);
+        color: white;
+        padding: 5rem 0;
+      }
+      .secHeading {
+        font-size: 5rem;
+        padding: 0 10rem;
+      }
+      .text {
+        font-size: 1.5rem;
+        padding: 0 10rem;
+        margin: 5rem 0;
+      }
+      .bg {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+      }
+      .desc {
+        position: absolute;
+        background-color: white;
+        padding: 0.5rem 2.5rem;
+        top: 50%;
+        left: 50%;
+        color: black;
+        font-size: 3.5rem;
+        font-weight: 600;
+      }
+      .bg1 {
+        background-image: url(assets/sport-1.jpg);
+      }
+      .bg2 {
+        background-image: url(assets/sport-2.jpg);
+      }
+      .bg3 {
+        background-image: url(assets/sport-3.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <img src="assets/background.png" class="background" />
+        <img src="assets/foreground.png" class="foreground" />
+        <h1>ADVENTURE</h1>
+      </div>
+
+      <section>
+        <h2 class="secHeading">Adventure Time</h2>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio
+          ipsum totam ratione quam neque doloremque laudantium ullam odit
+          voluptatem impedit ad officiis fuga nesciunt, voluptate ab labore enim
+          cum!
+          <br /><br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          laboriosam eaque accusantium cupiditate adipisci? Reprehenderit
+          laborum nostrum voluptates. Tempora perferendis perspiciatis dolores
+          inventore cumque sapiente illo in! A, doloribus animi!
+        </p>
+
+        <div class="bg bg1">
+          <h2 class="desc">BIKING</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio
+          ipsum totam ratione quam neque doloremque laudantium ullam odit
+          voluptatem impedit ad officiis fuga nesciunt, voluptate ab labore enim
+          cum!
+          <br /><br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          laboriosam eaque accusantium cupiditate adipisci? Reprehenderit
+          laborum nostrum voluptates. Tempora perferendis perspiciatis dolores
+          inventore cumque sapiente illo in! A, doloribus animi!
+        </p>
+
+        <div class="bg bg2">
+          <h2 class="desc">PARA GLIDING</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio
+          ipsum totam ratione quam neque doloremque laudantium ullam odit
+          voluptatem impedit ad officiis fuga nesciunt, voluptate ab labore enim
+          cum!
+          <br /><br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          laboriosam eaque accusantium cupiditate adipisci? Reprehenderit
+          laborum nostrum voluptates. Tempora perferendis perspiciatis dolores
+          inventore cumque sapiente illo in! A, doloribus animi!
+        </p>
+
+        <div class="bg bg3">
+          <h2 class="desc">Surfing</h2>
+        </div>
+        <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni odio
+          ipsum totam ratione quam neque doloremque laudantium ullam odit
+          voluptatem impedit ad officiis fuga nesciunt, voluptate ab labore enim
+          cum!
+          <br /><br />
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          laboriosam eaque accusantium cupiditate adipisci? Reprehenderit
+          laborum nostrum voluptates. Tempora perferendis perspiciatis dolores
+          inventore cumque sapiente illo in! A, doloribus animi!
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
