@@ -158,6 +158,7 @@ label.color6 {
     transform: translate3d(3px, 0, 0) rotate(3deg);
   }
 }
+
 .backColor {
   position: fixed;
   top: 0;
@@ -170,6 +171,43 @@ label.color6 {
   transition: all 250ms linear;
   transition-delay: 300ms;
 }
+
+.backColor.chair2 {
+  background-image: linear-gradient(196deg, #4c4c4c, #262626);
+  opacity: 0;
+}
+.forColor2:checked ~ .backColor.chair2 {
+  opacity: 1;
+}
+.backColor.chair3 {
+  background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+  opacity: 0;
+}
+.forColor3:checked ~ .backColor.chair3 {
+  opacity: 1;
+}
+.backColor.chair4 {
+  background-image: linear-gradient(196deg, #97afc3, #6789a7);
+  opacity: 0;
+}
+.forColor4:checked ~ .backColor.chair4 {
+  opacity: 1;
+}
+.backColor.chair5 {
+  background-image: linear-gradient(196deg, #afa6a0, #8c7f76);
+  opacity: 0;
+}
+.forColor5:checked ~ .backColor.chair5 {
+  opacity: 1;
+}
+.backColor.chair6 {
+  background-image: linear-gradient(196deg, #aaadac, #838786);
+  opacity: 0;
+}
+.forColor6:checked ~ .backColor.chair6 {
+  opacity: 1;
+}
+
 .infoWrap {
   position: relative;
   margin-left: 500px;
